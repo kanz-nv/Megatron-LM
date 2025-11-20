@@ -579,7 +579,6 @@ class DynamicInferenceContext(BaseInferenceContext):
                         self.num_attention_heads_per_partition,
                         self.hidden_size_per_attention_head,
                     ),
-                    -1,
                     dtype=self.params_dtype,
                     device=torch.cuda.current_device(),
                 )
